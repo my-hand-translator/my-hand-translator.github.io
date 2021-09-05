@@ -1,8 +1,13 @@
+import React from "react";
+
+import Layout from "./layouts";
+import Container from "./components/Container";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header" />
-    </div>
+    <Layout className="App">
+      <Container>컨텐츠</Container>
+    </Layout>
   );
 }
 
