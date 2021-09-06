@@ -20,7 +20,7 @@ function App() {
               <Button href="/#">Download Now</Button>
             </ButtonWrap>
             <HeroImage>
-              <img src="images/translate-1820325_1280.png" alt="서비스_사진" />
+              <img src="images/mock-img-1280.png" alt="서비스_사진" />
             </HeroImage>
           </HeroStyled>
         </Container>

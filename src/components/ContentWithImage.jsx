@@ -11,13 +11,11 @@ function ContentWithImage({ title, descriptions, style }) {
         <ContentStyled>
           <Article>
             <h1>{title}</h1>
-            {descriptions.map(description => {
-              return <p key={description.id}>{description.text}</p>;
-            })}
+            {descriptions.map(description => <p key={description.id}>{description.text}</p>)}
           </Article>
 
           <ImageWrap>
-            <img src="images/translate-1820325_1280.png" alt="서비스_사진" />
+            <img src="images/mock-img-1280.png" alt="서비스_사진" />
           </ImageWrap>
         </ContentStyled>
       </Container>
