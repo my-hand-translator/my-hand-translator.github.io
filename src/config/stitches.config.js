@@ -4,11 +4,11 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
   createStitches({
     theme: {
       colors: {
-        primary: "#264653",
-        secondary: "#2a9d8f",
-        tertiary: "#e9c46a",
-        quaternary: "#f4a261",
-        quinary: "#e76f51",
+        primary: "#737373",
+        secondary: "#1d8ff2",
+        tertiary: "#1a6dd9",
+        quaternary: "#f2f2f2",
+        quinary: "#f2b988",
       },
     },
     media: {
