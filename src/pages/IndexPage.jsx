@@ -21,7 +21,7 @@ function App() {
               <Button to="/#">Download Now</Button>
             </ButtonWrap>
             <HeroImage>
-              <img src="images/mock-img-1280.png" alt="서비스_사진" />
+              <img src="images/my-hand-translation.gif" alt="서비스_사진" />
             </HeroImage>
           </HeroStyled>
         </Container>
@@ -56,10 +56,12 @@ function App() {
 }
 
 const HeroImage = styled("div", {
+  width: "75%",
   display: "flex",
   borderRadius: "10px",
   marginBottom: "30px",
   overflow: "hidden",
+  margin: "auto",
   "& img": {
     width: "100%",
   },
@@ -91,7 +93,7 @@ const HeroStyled = styled("section", {
 const MainStyled = styled("section", {
   marginBottom: "200px",
   maxHeight: "770px",
-  backgroundColor: "$secondary",
+  backgroundColor: "$lightBlue",
   "@medium": {
     marginBottom: "50px",
   },
