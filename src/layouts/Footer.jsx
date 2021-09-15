@@ -82,7 +82,7 @@ const FooterContent = styled("div", {
 const FooterStyled = styled("footer", {
   paddingTop: "30px",
   paddingBottom: "30px",
-  backgroundColor: "$primary",
+  backgroundColor: "$gray",
   color: "#ffffff",
   "@medium": {
     flexDirection: "column",

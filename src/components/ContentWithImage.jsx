@@ -11,7 +11,9 @@ function ContentWithImage({ title, descriptions, style }) {
         <ContentStyled>
           <Article>
             <h1>{title}</h1>
-            {descriptions.map(description => <p key={description.id}>{description.text}</p>)}
+            {descriptions.map(description => (
+              <p key={description.id}>{description.text}</p>
+            ))}
           </Article>
 
           <ImageWrap>
