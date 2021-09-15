@@ -99,7 +99,6 @@ const FooterStyled = styled("footer", {
   paddingTop: "30px",
   paddingBottom: "30px",
   backgroundColor: "$gray",
-  lineHeight: 1.7,
   color: "#ffffff",
 
   "@medium": {
