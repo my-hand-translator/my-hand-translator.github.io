@@ -8,8 +8,6 @@ import { GET_STARTED } from "../constants/url";
 function Header() {
   const { pathname } = useLocation();
 
-  console.log(pathname);
-
   return (
     <HeaderStyled
       css={{
@@ -44,7 +42,7 @@ const Nav = styled("nav", {
 
 const HeaderContent = styled("div", {
   display: "flex",
-  height: "60px",
+  height: "100px",
   alignItems: "center",
   justifyContent: "space-between",
 
@@ -59,6 +57,7 @@ const HeaderContent = styled("div", {
 const HeaderStyled = styled("header", {
   backgroundColor: "$lightBlue",
   color: "#ffffff",
+  fontSize: "20px",
 });
 
 export default Header;
