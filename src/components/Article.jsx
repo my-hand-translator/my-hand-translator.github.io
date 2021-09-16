@@ -15,6 +15,7 @@ const Article = styled("article", {
   },
   "& p": {
     fontSize: "1.3em",
+    lineHeight: "1.7",
     marginBottom: "10px",
     wordBreak: "keep-all",
   },

@@ -7,7 +7,7 @@ const Button = styled(Link, {
   padding: "20px 40px",
   margin: "10px",
   borderRadius: "4px",
-  background: "$apricot",
+  background: "$lightApricot",
   color: "#ffffff",
   fontSize: "18px",
   fontWeight: 600,
@@ -17,7 +17,7 @@ const Button = styled(Link, {
   cursor: "pointer",
   transition: "all .2s ease",
   "&:hover": {
-    background: "$lightApricot",
+    background: "$apricot",
   },
 });
 

@@ -25,7 +25,7 @@ function Header() {
             <Link to="/">My Hand Translation</Link>
           </div>
           <Nav>
-            <a href="/#intro">intro</a>
+            <a href="/#intro">Intro</a>
             <a href="/#feature">Feature</a>
           </Nav>
         </HeaderContent>

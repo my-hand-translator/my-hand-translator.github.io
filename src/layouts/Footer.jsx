@@ -19,7 +19,7 @@ function Footer() {
             <p>PRODUCT</p>
             <ul>
               <li>
-                <a href="/#intro">intro</a>
+                <a href="/#intro">Intro</a>
               </li>
               <li>
                 <a href="/#feature">Feature</a>
