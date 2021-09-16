@@ -20,6 +20,6 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
       large: "(max-width: 1024px)",
     },
     utils: {
-      marginX: value => ({ marginLeft: value, marginRight: value }),
+      marginX: (value) => ({ marginLeft: value, marginRight: value }),
     },
   });

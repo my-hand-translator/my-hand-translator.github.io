@@ -4,20 +4,24 @@ import { styled } from "../config/stitches.config";
 import Container from "./Container";
 import Article from "./Article";
 
-function ContentWithImage({ title, descriptions, style }) {
+function ContentWithImage({ title, descriptions, imgSrc, style }) {
   return (
     <ContentWithImageStyled css={style}>
       <Container>
         <ContentStyled>
-          <Article>
-            <h1>{title}</h1>
-            {descriptions.map(description => (
+          <Article
+            css={{
+              marginRight: "50px",
+            }}
+          >
+            <h2>{title}</h2>
+            {descriptions.map((description) => (
               <p key={description.id}>{description.text}</p>
             ))}
           </Article>
 
           <ImageWrap>
-            <img src="images/mock-img-1280.png" alt="서비스_사진" />
+            <img src={imgSrc} alt="서비스_사진" />
           </ImageWrap>
         </ContentStyled>
       </Container>
@@ -27,6 +31,9 @@ function ContentWithImage({ title, descriptions, style }) {
 
 const ImageWrap = styled("div", {
   flex: 1,
+  overflow: "hidden",
+  borderRadius: "10px",
+  boxShadow: "0 2px 10px rgba(0, 0, 0, 0.3)",
   "& img": {
     width: "100%",
   },
