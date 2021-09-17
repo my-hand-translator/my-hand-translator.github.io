@@ -29,7 +29,7 @@ function App() {
 
       <section id="feature" className="feature">
         <Container id="intro">
-          <Article>
+          <Article css={{ marginBottom: "40px" }}>
             <h2>Intro</h2>
             <p>
               My Hand Translation은 기술 문서를 번역할 때 개발 용어가 다른 뜻으로 번역되는 불편함을
@@ -50,30 +50,32 @@ function App() {
               text: "용어집을 통해 영어로 된 기술 용어를 자신이 원하는 한글 단어로 변경하여 번역 할 수 있습니다.",
             },
           ]}
+          reverse
         />
       </section>
 
       <section id="feature-with-server" className="feature">
+        <ContentWithImage
+          imgSrc="images/index/other-translation.png"
+          title="서버 연동 시에 추가되는 기능"
+          descriptions={[
+            {
+              id: 1,
+              text: "서버 DB를 이용해 다른 사람이 번역했던 내역이 있으면 우선적으로 보여주어 Google Translation API 요청을 아낄 수 있습니다.",
+            },
+          ]}
+        />
+
         <ContentWithImage
           imgSrc="images/index/other_glossary.png"
           title="서버 연동 시에 추가되는 기능"
           descriptions={[
             { id: 1, text: "다른 사람 용어집 열람하고 나의 용어집에에 적용할 수 있습니다." },
           ]}
-        />
-
-        <ContentWithImage
           style={{
             backgroundColor: "#f7f9fa",
           }}
-          imgSrc="images/index/other-translation.png"
-          title="서버 연동 시에 추가되는 기능"
-          descriptions={[
-            {
-              id: 1,
-              text: "서버 DB를 이용해 다른 사람이 번역했던 내역이 있으면 우선적으로 보여주어 Google Translation API 요청을 아낄 수 있습니다",
-            },
-          ]}
+          reverse
         />
       </section>
     </main>

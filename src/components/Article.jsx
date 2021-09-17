@@ -1,7 +1,9 @@
 import { styled } from "../config/stitches.config";
 
 const Article = styled("article", {
-  marginBottom: "30px",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
   color: "#444444",
   flex: 1,
 

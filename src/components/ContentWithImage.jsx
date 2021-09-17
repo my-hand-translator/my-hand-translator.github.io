@@ -1,30 +1,63 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from "react";
 import { styled } from "../config/stitches.config";
 
 import Container from "./Container";
 import Article from "./Article";
+import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
-function ContentWithImage({ title, descriptions, imgSrc, style }) {
+function ContentWithImage({ title, descriptions, imgSrc, style, reverse }) {
+  const animatedItem = useScrollFadeIn();
+
   return (
     <ContentWithImageStyled css={style}>
-      <Container>
-        <ContentStyled>
-          <Article
+      {reverse && (
+        <Container {...animatedItem}>
+          <ContentStyled
             css={{
-              marginRight: "50px",
+              "@medium": {
+                flexDirection: "column-reverse",
+              },
             }}
           >
-            <h2>{title}</h2>
-            {descriptions.map((description) => (
-              <p key={description.id}>{description.text}</p>
-            ))}
-          </Article>
+            <ImageWrap
+              css={{
+                marginRight: "50px",
+              }}
+            >
+              <img src={imgSrc} alt="서비스_사진" />
+            </ImageWrap>
 
-          <ImageWrap>
-            <img src={imgSrc} alt="서비스_사진" />
-          </ImageWrap>
-        </ContentStyled>
-      </Container>
+            <Article>
+              <h2>{title}</h2>
+              {descriptions.map((description) => (
+                <p key={description.id}>{description.text}</p>
+              ))}
+            </Article>
+          </ContentStyled>
+        </Container>
+      )}
+
+      {!reverse && (
+        <Container {...animatedItem}>
+          <ContentStyled>
+            <Article
+              css={{
+                marginRight: "50px",
+              }}
+            >
+              <h2>{title}</h2>
+              {descriptions.map((description) => (
+                <p key={description.id}>{description.text}</p>
+              ))}
+            </Article>
+
+            <ImageWrap>
+              <img src={imgSrc} alt="서비스_사진" />
+            </ImageWrap>
+          </ContentStyled>
+        </Container>
+      )}
     </ContentWithImageStyled>
   );
 }
@@ -37,6 +70,11 @@ const ImageWrap = styled("div", {
   "& img": {
     width: "100%",
   },
+
+  "@medium": {
+    marginRight: "0",
+    marginTop: "30px",
+  },
 });
 
 const ContentStyled = styled("div", {
@@ -48,6 +86,7 @@ const ContentStyled = styled("div", {
 
 const ContentWithImageStyled = styled("section", {
   padding: "50px 0",
+  overflow: "hidden",
 });
 
 export default ContentWithImage;
