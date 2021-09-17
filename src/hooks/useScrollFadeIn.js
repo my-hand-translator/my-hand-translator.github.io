@@ -33,7 +33,7 @@ const useScrollFadeIn = () => {
     ref: dom,
     style: {
       opacity: 0,
-      transform: "translate3d(0, 50%, 0)",
+      transform: "translate3d(0, 30%, 0)",
     },
   };
 };

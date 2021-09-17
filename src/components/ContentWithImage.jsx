@@ -66,11 +66,12 @@ const ImageWrap = styled("div", {
   flex: 1,
   overflow: "hidden",
   borderRadius: "10px",
-  boxShadow: "0 2px 10px rgba(0, 0, 0, 0.3)",
+  boxShadow:
+    "rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px",
+
   "& img": {
     width: "100%",
   },
-
   "@medium": {
     marginRight: "0",
     marginTop: "30px",
@@ -79,6 +80,7 @@ const ImageWrap = styled("div", {
 
 const ContentStyled = styled("div", {
   display: "flex",
+
   "@medium": {
     flexDirection: "column",
   },

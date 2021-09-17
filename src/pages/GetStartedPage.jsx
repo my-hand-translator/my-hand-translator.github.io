@@ -10,17 +10,17 @@ function GetStartedPage() {
         <h1>GET STARTED</h1>
 
         <p>
-          My Hand Translation는 사용자 개인의 Google Cloud Translation API를 이용합니다. 이는 Cloud
-          Translation API가{" "}
+          My Hand Translator은 사용자 개인의 Google Cloud Translator API를 이용합니다. Cloud
+          Translator API는{" "}
           <a
             href="https://cloud.google.com/translate/pricing?hl=ko"
             target="_blank"
             rel="noreferrer"
           >
-            월 50만자의 제한
-          </a>
-          이 있기 때문에 My Hand Translation 프로젝트의 장기적 유지를 위해 결정되었습니다. 따라서 My
-          Hand Translation을 사용하기 위해서는{" "}
+            월 50만자까지
+          </a>{" "}
+          무료로 이용 할 수 있기 때문에 My Hand Translator 프로젝트를 장기적으로 유지하기 위해
+          결정되었습니다. 따라서 My Hand Translator을 사용하기 위해서는{" "}
           <a href="https://cloud.google.com/" target="_blank" rel="noreferrer">
             구글 클라우드 플랫폼
           </a>{" "}
@@ -46,7 +46,7 @@ function GetStartedPage() {
           <li>
             <ListContainer>
               <p>
-                2. API 및 서비스 - 대시보드 - 상단에 API 및 서비스 사용 및 설정 - Cloud Translation
+                2. API 및 서비스 - 대시보드 - 상단에 API 및 서비스 사용 및 설정 - Cloud Translator
                 API 사용
               </p>
               <img
@@ -112,31 +112,8 @@ function GetStartedPage() {
                   alt="3_5_create_OAuth"
                 />
               </ListContainer>
-              <ListContainer>
-                <p> - 클라이언트 ID JSON파일 다운로드 </p>
-                <img
-                  srcSet="images/getStarted/3_6_create_OAuth_1200.png 1200w,
-                  images/getStarted/3_6_create_OAuth_768.png 768w"
-                  src="images/getStarted/3_6_create_OAuth_1200.png"
-                  alt="3_6_create_OAuth"
-                />
-              </ListContainer>
             </ListContainer>
           </li>
-          <li>
-            <ListContainer>
-              <p>
-                4. 다운로드 받은 JSON파일에서 client_id, project_id, client_secret, redirect_url을
-                입력합니다.
-              </p>
-
-              <ListContainer>
-                <p>- Google 로그인 후 권한 동의를 합니다.</p>
-              </ListContainer>
-            </ListContainer>
-          </li>
-          <li />
-          <li />
         </ul>
       </Container>
     </Main>
@@ -146,6 +123,9 @@ function GetStartedPage() {
 const ListContainer = styled("section", {
   margin: "1em",
 
+  "& p": {
+    marginBottom: "0.7em",
+  },
   "& img": {
     width: "60%",
     marginBottom: "1em",
@@ -169,13 +149,11 @@ const Main = styled("main", {
     fontSize: "1.5em",
     fontWeight: 600,
   },
-
   "& h2": {
     margin: "1em 0",
     fontSize: "1.2em",
     fontWeight: 600,
   },
-
   "@medium": {
     fontSize: "15px",
 

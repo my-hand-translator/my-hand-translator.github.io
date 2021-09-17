@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 import { styled } from "../config/stitches.config";
 
-const Button = styled(Link, {
+const ButtonToGoAnotherSite = styled("a", {
   display: "flex",
   minWidth: "150px",
   padding: "20px 40px",
@@ -24,4 +23,4 @@ const Button = styled(Link, {
   },
 });
 
-export default Button;
+export default ButtonToGoAnotherSite;
