@@ -138,8 +138,6 @@ function GetStartedPage() {
               </h3>
             </ListContainer>
           </li>
-          <li />
-          <li />
         </ul>
       </Container>
     </Main>
