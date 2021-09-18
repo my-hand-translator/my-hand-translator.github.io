@@ -4,11 +4,15 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
   createStitches({
     theme: {
       colors: {
-        primary: "#737373",
-        secondary: "#1d8ff2",
-        tertiary: "#1a6dd9",
-        quaternary: "#f2f2f2",
-        quinary: "#f2b988",
+        blue: "#1A6DD9",
+        lightBlue: "#1D8FF2",
+        lightApricot: "#F2B988",
+        apricot: "#e8a061",
+        lightGray: "#f2f2f2",
+        gray: "#737373",
+        red: "#EA4435",
+        white: "#ffffff",
+        black: "#222222",
       },
     },
     media: {
@@ -16,6 +20,6 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
       large: "(max-width: 1024px)",
     },
     utils: {
-      marginX: value => ({ marginLeft: value, marginRight: value }),
+      marginX: (value) => ({ marginLeft: value, marginRight: value }),
     },
   });

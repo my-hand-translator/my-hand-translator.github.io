@@ -3,12 +3,5 @@
   "useTabs": false,
   "tabWidth": 2,
   "trailingComma": "all",
-  "printWidth": 100,
-  "arrowParens": "avoid",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "prettier.disableLanguages": ["js"],
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true
+  "printWidth": 100
 }
