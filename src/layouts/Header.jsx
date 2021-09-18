@@ -22,7 +22,7 @@ function Header() {
           }}
         >
           <div className="logo">
-            <Link to="/">My Hand Translator</Link>
+            <Link to="/">My Hand Translation</Link>
           </div>
           <Nav>
             <a href="/#intro">Intro</a>
