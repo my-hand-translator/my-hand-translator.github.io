@@ -1,7 +1,7 @@
 {
   "name": "document",
   "homepage": "https://my-hand-translator.github.io",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@stitches/react": "^1.0.0",
